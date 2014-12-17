@@ -1,7 +1,7 @@
 var app = require('express')(),
     winston = require('winston'),
     bodyParser = require('body-parser'),
-    filter = require('./lib/filter');
+    csv = require('express-csv');
 
 /*
 * Get winston to log uncaught exceptions and to not exit
@@ -26,11 +26,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/', function(req, res) {
-    filter.format(req.body, function(output) {
-        // set content-type
-        res.set({'Content-Type' : 'text/csv'});
-        res.send(output);
-    };
+    res.csv(req.body);
 });
 
 var PORT = process.env.PORT || 80;

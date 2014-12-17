@@ -8,7 +8,7 @@
     "url" : "git@github.com:timothy-r/csv.git"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha ../test"
+    "test": "echo nothing to test"
   },
   "author": "Tim Rodger tim.rodger@gmail.com",
   "dependencies": {
