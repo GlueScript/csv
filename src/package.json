@@ -1,0 +1,24 @@
+{
+  "name": "CSV",
+  "version": "0.2.2",
+  "description": "Generates CSV documents from json arrays",
+  "main": "index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "git@github.com:timothy-r/csv.git"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ../test"
+  },
+  "author": "Tim Rodger tim.rodger@gmail.com",
+  "dependencies": {
+    "express": "~4.10.4",
+    "body-parser": "~1.9.3",
+    "express-csv": "~0.6.0",
+    "winston": "~0.8.3"
+  },
+  "devDependencies": {
+    "should": "~4.3.0",
+    "mocha": "~2.0.1"
+  }
+}
