@@ -1,6 +1,6 @@
 {
   "name": "CSV",
-  "version": "0.2.2",
+  "version": "0.1.0",
   "description": "Generates CSV documents from json arrays",
   "main": "index.js",
   "repository": {
